@@ -18,15 +18,13 @@ args = {
     "warmup_steps": 0,
     "max_grad_norm": 1.0,
     "do_lower_case": False,
-
     "logging_steps": 50,
     "evaluate_during_training": False,
     "evaluate_during_training_steps": 2000,
     "evaluate_during_training_verbose": False,
     "use_cached_eval_features": False,
-    "save_eval_checkpoints": True
+    "save_eval_checkpoints": True,
     "save_steps": 2000,
-    "no_cache": False,
     "save_model_every_epoch": True,
     "tensorboard_dir": None,
 
@@ -51,3 +49,6 @@ args = {
     "encoding": None,
     "config": {},
 }
+
+
+print(args)
