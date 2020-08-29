@@ -37,7 +37,6 @@ def train(model, train_loader, val_loader, criterion, optimizer, epochs = 10):
         val_loader ([type]): [description]
         criterion ([type]): [description]
         optimizer ([type]): [description]
-        
         epochs (int, optional): [description]. Defaults to 10.
     """
     
