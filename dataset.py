@@ -18,21 +18,21 @@ def data_loaders(device, exts = None, batch_first=True):
 
     # create data fields for source and target
     source = Field(
-    init_token="<sos>",
-    eos_token="<eos>",
-    lower=True,
-    tokenize="spacy",
-    tokenizer_language="de",
-    batch_first=batch_first
+        init_token="<sos>",
+        eos_token="<eos>",
+        lower=True,
+        tokenize="spacy",
+        tokenizer_language="de",
+        batch_first=batch_first
     )
 
     target = Field(
-    init_token="<sos>",
-    eos_token="<eos>",
-    lower=True,
-    tokenize="spacy",
-    tokenizer_language="de",
-    batch_first=batch_first
+        init_token="<sos>",
+        eos_token="<eos>",
+        lower=True,
+        tokenize="spacy",
+        tokenizer_language="de",
+        batch_first=batch_first
     )
     
     # download the dataset
