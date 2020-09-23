@@ -47,7 +47,7 @@ def train(model, train_loader, val_loader, criterion, optimizer, epochs = 10):
     for epoch in range(epochs):
         
         train_loss = []
-        for batch in train_loader:
+        for batch in tqdm(train_loader):
             src, trg = batch.src, batch.trg
             batch_size, trg_len = batch.trg.shape[0], batch.trg.shape[1]
             outputs = model(src, trg)
